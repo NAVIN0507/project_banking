@@ -72,3 +72,9 @@ disableLogger: true,
 // https://vercel.com/docs/cron-jobs
 automaticVercelMonitors: true,
 });
+module.exports = {
+  reactStrictMode: true,
+  devIndicators: {
+    autoPrerender: false,
+  },
+};

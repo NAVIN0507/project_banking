@@ -201,7 +201,7 @@ lastName: type==='sign-in'? z.string().optional() : z.string().max(8),
 address1: type==='sign-in'? z.string().optional() : z.string().max(50),
 city: type==='sign-in'? z.string().optional() : z.string().max(10),
 state: type==='sign-in'? z.string().optional() : z.string().min(2).max(20 ),
-postalCode: type==='sign-in'? z.string().optional() : z.string().min(3).max(6),
+postalCode:  z.string().min(3).max(6),
 dateOfBirth: type==='sign-in'? z.string().optional() : z.string().min(8),
 ssn: type==='sign-in'? z.string().optional() : z.string().min(3),
 //sign-in
